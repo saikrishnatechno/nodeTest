@@ -15,20 +15,3 @@ const sequelize = new Sequelize(
 );
 
 export default sequelize;
-
-
-// import { Sequelize } from 'sequelize';
-// import * as dotenv from 'dotenv';
-
-// dotenv.config();
-// console.log("Before sequelize")
-// const sequelize = new Sequelize({
-//     database:  "userManagement",
-//     username:  "root",
-//     password:  "admin",
-//     host:  "localhost",
-//     dialect:  "mysql",
-//     logging: false,
-//   });
-// console.log("After sequelize");
-// export default sequelize;

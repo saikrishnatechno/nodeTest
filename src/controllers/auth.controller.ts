@@ -6,9 +6,7 @@ export const loginUser = async (req: Request, res: Response, next: NextFunction)
   const { username, password } = req.body;
 
   try {
-    console.log("Into the login : ")
     const user = await User.findOne({ where: { username } });
-    console.log("after the user.findone")
     if (!user) {
       return res.status(401).json({ message: 'Invalid username or password' });
     }
